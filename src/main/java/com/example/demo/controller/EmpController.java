@@ -18,7 +18,7 @@ public class EmpController {
 	@Autowired
 	private EmpService service;
 	
-	@GetMapping("/all-emp")
+	@GetMapping("/")
 	public List<Employee> allEmp(){
 		return service.findAllEmp();
 	}
